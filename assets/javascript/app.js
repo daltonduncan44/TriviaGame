@@ -10,7 +10,7 @@ $(".start btn btn-secondary btn-lg btn-block").on("click", function(){
     setInterval(function() {
       counter--;
        if (counter >= 0) {
-$("#startClock").append($("<span>"))
+          span = document.getElementById("count");
           span.innerHTML = counter;
         console.log("say something")
        }
