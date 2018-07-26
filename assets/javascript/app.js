@@ -40,7 +40,7 @@ $("#count").text(counter);
   $("#submitBttn").click(function () 
   {
 console.log("test submitted");
-    clearInterval(counter);
+    clearTimeout(counter);
    validateForm(); 
   });
 
@@ -116,6 +116,7 @@ var resultString = "Great Job you got " + correctAnswers+ " right out of 10.";
 $(".testBody").hide();
 $("#count").hide();
 $("#results").text(resultString);
+$("#startClock").hide();
 
 
 
