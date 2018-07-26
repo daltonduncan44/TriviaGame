@@ -30,7 +30,8 @@ $("#count").text(counter);
 
       }
       if (counter === 0) {
-        alert('sorry, out of time');
+        var timeOut = "Sorry times up try again";
+        $(".testBody").text(timeOut);
         clearInterval(counter);
       }
     }, 1000);
@@ -60,6 +61,7 @@ console.log("test submitted");
     var q8 = document.forms["quizForm"]["qMt"].value;
     var q9 = document.forms["quizForm"]["qHw"].value;
     var q10 = document.forms["quizForm"]["qAl"].value;
+    //if statements to add to your score can be done in for loop later
     if (q1 === grading[0]) {
       correctAnswers++;
           console.log(correctAnswers)
@@ -111,8 +113,9 @@ console.log("test submitted");
 
 
 var resultString = "Great Job you got " + correctAnswers+ " right out of 10.";
-
-$(".container").text(resultString);
+$(".testBody").hide();
+$("#count").hide();
+$("#results").text(resultString);
 
 
 

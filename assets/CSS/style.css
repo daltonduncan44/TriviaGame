@@ -1,0 +1,25 @@
+#results {
+    margin: 2pc 10pc 0pc 15pc;
+    background-color: lightgray;
+}
+
+.testBody {
+    background-color: lightgray;
+    padding: 2pc;
+    width: 63pc;
+    float: right;
+}
+
+body{
+    background-image: url(../images/574863ec160000ab02f94a7b.jpeg);
+}
+
+#count {
+    background-color: crimson;
+    text-align: center;
+}
+
+#title{
+    text-align: center;
+    margin: 3pc,0pc,0pc,0pc;
+}
