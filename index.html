@@ -1,118 +1,126 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="assets/CSS/style.css" />
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+    crossorigin="anonymous"></script>
     <script src="assets/javascript/app.js"></script>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B"
+        crossorigin="anonymous">
 
 </head>
+
 <body>
-     <div class="container"> 
-            <div class="row justify-content-md-center">
-                    <div class="col col-lg-6">
-                        <h1>State Capital Test</h1>
-            <button type="button" class="btn btn-secondary btn-lg btn-block">Start the time!!</button>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-6">
+                <h1>State Capital Test</h1>
+                <div id="startClock">
+                    <button type="button" class="start btn btn-secondary btn-lg btn-block">Start the time!!</button>
+                    <h3 class="disTime">00</h3>
                 </div>
             </div>
-            <div class="row justify-content-md-center">
-                    <div class="col col-lg-6">
-                      <h2>What is the capital of Florida</h2>
-                      <input type="radio" name="radioFl" value="true"> Tallahassee
-                      <input type="radio" name="radioFl" value="false"> Miami
-                      <input type="radio" name="radioFl" value="false"> Orlando
-                      <input type="radio" name="radioFl" value="false"> Tampa
-                    </div>
-             </div>
-             <div class="row justify-content-md-center">
-                    <div class="col col-lg-6">
-                      <h2>What is the capital of California</h2>
-                      <input type="radio" name="radioCal" value="false"> Los Angeles
-                      <input type="radio" name="radioCal" value="false"> San Francisco
-                      <input type="radio" name="radioCal" value="false"> San Diego
-                      <input type="radio" name="radioCal" value="true"> Sacramento
-                    </div>
-             </div>
-             <div class="row justify-content-md-center">
-                    <div class="col col-lg-6">
-                      <h2>What is the capital of Illinois</h2>
-                      <input type="radio" name="radioIl" value="true"> Springfield
-                      <input type="radio" name="radioIl" value="false"> Chicago
-                      <input type="radio" name="radioIl" value="false"> Rockford
-                      <input type="radio" name="radioIl" value="false"> Peoria
-                    </div>
-             </div>
-             <div class="row justify-content-md-center">
-                    <div class="col col-lg-6">
-                      <h2>What is the capital of Texas</h2>
-                      <input type="radio" name="radioTx" value="false"> Houston
-                      <input type="radio" name="radioTx" value="true"> Austin
-                      <input type="radio" name="radioTx" value="false"> Dallas
-                      <input type="radio" name="radioTx" value="false"> San Antonio
-                    </div>
-             </div>
-             <div class="row justify-content-md-center">
-                    <div class="col col-lg-6">
-                      <h2>What is the capital of New York</h2>
-                      <input type="radio" name="radioNy" value="false"> New York City
-                      <input type="radio" name="radioNy" value="false"> Buffalo
-                      <input type="radio" name="radioNy" value="false"> Rochester
-                      <input type="radio" name="radioNy" value="true"> Albany
-                    </div>
-             </div>
-             <div class="row justify-content-md-center">
-                    <div class="col col-lg-6">
-                      <h2>What is the capital of Colorado</h2>
-                      <input type="radio" name="radioCol" value="false"> Colorado Spring
-                      <input type="radio" name="radioCol" value="false"> Boulder
-                      <input type="radio" name="radioCol" value="true"> Denver
-                      <input type="radio" name="radioCol" value="false"> Fort Collins
-                    </div>
-             </div>
-             <div class="row justify-content-md-center">
-                    <div class="col col-lg-6">
-                      <h2>What is the capital of Nevada</h2>
-                      <input type="radio" name="radioNv" value="false"> Las Vegas
-                      <input type="radio" name="radioNv" value="false"> Reno
-                      <input type="radio" name="radioNv" value="false"> Henderson
-                      <input type="radio" name="radioNv" value="true"> Carson City
-                    </div>
-             </div>
-             <div class="row justify-content-md-center">
-                    <div class="col col-lg-6">
-                      <h2>What is the capital of Montana</h2>
-                      <input type="radio" name="radioMt" value="true"> Helena
-                      <input type="radio" name="radioMt" value="false"> Billings
-                      <input type="radio" name="radioMt" value="false"> Missoula
-                      <input type="radio" name="radioMt" value="false"> Bozeman
-                    </div>
-             </div>
-             <div class="row justify-content-md-center">
-                    <div class="col col-lg-6">
-                      <h2>What is the capital of Hawaii</h2>
-                      <input type="radio" name="radioHw" value="false"> Hilo
-                      <input type="radio" name="radioHw" value="true"> Honolulu
-                      <input type="radio" name="radioHw" value="false"> Kailua
-                      <input type="radio" name="radioHw" value="false"> Hawi
-                    </div>
-             </div>
-             <div class="row justify-content-md-center">
-                    <div class="col col-lg-6">
-                      <h2>What is the capital of Alaska</h2>
-                      <input type="radio" name="radioAl" value="false"> Anchorage
-                      <input type="radio" name="radioAl" value="false"> Fairbanks
-                      <input type="radio" name="radioAl" value="false"> Ketchikan
-                      <input type="radio" name="radioAl" value="true"> Juneau
-                    </div>
-             </div>
-             <div class="row justify-content-md-center">
-                    <div class="col col-lg-6">
-            <button type="button" class="btn btn-secondary btn-lg btn-block">Submit Test</button>
-                </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-6">
+                <h2>What is the capital of Florida</h2>
+                <input type="radio" name="radioFl" value="true"> Tallahassee
+                <input type="radio" name="radioFl" value="false"> Miami
+                <input type="radio" name="radioFl" value="false"> Orlando
+                <input type="radio" name="radioFl" value="false"> Tampa
             </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-6">
+                <h2>What is the capital of California</h2>
+                <input type="radio" name="radioCal" value="false"> Los Angeles
+                <input type="radio" name="radioCal" value="false"> San Francisco
+                <input type="radio" name="radioCal" value="false"> San Diego
+                <input type="radio" name="radioCal" value="true"> Sacramento
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-6">
+                <h2>What is the capital of Illinois</h2>
+                <input type="radio" name="radioIl" value="true"> Springfield
+                <input type="radio" name="radioIl" value="false"> Chicago
+                <input type="radio" name="radioIl" value="false"> Rockford
+                <input type="radio" name="radioIl" value="false"> Peoria
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-6">
+                <h2>What is the capital of Texas</h2>
+                <input type="radio" name="radioTx" value="false"> Houston
+                <input type="radio" name="radioTx" value="true"> Austin
+                <input type="radio" name="radioTx" value="false"> Dallas
+                <input type="radio" name="radioTx" value="false"> San Antonio
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-6">
+                <h2>What is the capital of New York</h2>
+                <input type="radio" name="radioNy" value="false"> New York City
+                <input type="radio" name="radioNy" value="false"> Buffalo
+                <input type="radio" name="radioNy" value="false"> Rochester
+                <input type="radio" name="radioNy" value="true"> Albany
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-6">
+                <h2>What is the capital of Colorado</h2>
+                <input type="radio" name="radioCol" value="false"> Colorado Spring
+                <input type="radio" name="radioCol" value="false"> Boulder
+                <input type="radio" name="radioCol" value="true"> Denver
+                <input type="radio" name="radioCol" value="false"> Fort Collins
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-6">
+                <h2>What is the capital of Nevada</h2>
+                <input type="radio" name="radioNv" value="false"> Las Vegas
+                <input type="radio" name="radioNv" value="false"> Reno
+                <input type="radio" name="radioNv" value="false"> Henderson
+                <input type="radio" name="radioNv" value="true"> Carson City
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-6">
+                <h2>What is the capital of Montana</h2>
+                <input type="radio" name="radioMt" value="true"> Helena
+                <input type="radio" name="radioMt" value="false"> Billings
+                <input type="radio" name="radioMt" value="false"> Missoula
+                <input type="radio" name="radioMt" value="false"> Bozeman
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-6">
+                <h2>What is the capital of Hawaii</h2>
+                <input type="radio" name="radioHw" value="false"> Hilo
+                <input type="radio" name="radioHw" value="true"> Honolulu
+                <input type="radio" name="radioHw" value="false"> Kailua
+                <input type="radio" name="radioHw" value="false"> Hawi
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-6">
+                <h2>What is the capital of Alaska</h2>
+                <input type="radio" name="radioAl" value="false"> Anchorage
+                <input type="radio" name="radioAl" value="false"> Fairbanks
+                <input type="radio" name="radioAl" value="false"> Ketchikan
+                <input type="radio" name="radioAl" value="true"> Juneau
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col col-lg-6">
+                <button type="button" class="btn btn-secondary btn-lg btn-block">Submit Test</button>
+            </div>
+        </div>
 
 
 
@@ -121,4 +129,5 @@
 
     </div>
 </body>
+
 </html>
