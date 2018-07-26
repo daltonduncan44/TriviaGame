@@ -1,10 +1,12 @@
 $(document).ready(function () {
   console.log("ready!");
+  $(".testBody").hide();
 //===global vars
-var counter = 30;
+var counter = 50;
 var correctAnswers = 0; 
 var incorrectAnswers = 0;
-var radio = "radio";
+
+//array made to see if input is right or wrong
 var grading = ["true","false"];
 
 // display the counter to the doc
@@ -17,7 +19,8 @@ $("#count").text(counter);
  
   $("#startClock").click(function () {
     console.log("on the clock")
-    //var counter = 30;
+    $(".testBody").show(200);
+    //var counter starts at 30 then counts down
     setInterval(function () {
       // subtract counter
       counter--;
@@ -32,7 +35,7 @@ $("#count").text(counter);
       }
     }, 1000);
   });
-    
+    //when submit buttun is clicked stop the timer and start the grading.
   $("#submitBttn").click(function () 
   {
 console.log("test submitted");
@@ -46,6 +49,7 @@ console.log("test submitted");
   //take in user inputs
   //check if inputs are correct
   function validateForm() {
+
     var q1 = document.forms["quizForm"]["qFl"].value;
     var q2 = document.forms["quizForm"]["qCal"].value;
     var q3 = document.forms["quizForm"]["qIl"].value;
@@ -64,6 +68,57 @@ console.log("test submitted");
       correctAnswers++;
       console.log(correctAnswers)
     }
+    if (q3 === grading[0]) {
+      correctAnswers++;
+      console.log(correctAnswers)
+    }
+
+    if (q4 === grading[0]) {
+      correctAnswers++;
+      console.log(correctAnswers)
+    }
+
+    if (q5 === grading[0]) {
+      correctAnswers++;
+      console.log(correctAnswers)
+    }
+
+    if (q6 === grading[0]) {
+      correctAnswers++;
+      console.log(correctAnswers)
+    }
+
+    if (q7 === grading[0]) {
+      correctAnswers++;
+      console.log(correctAnswers)
+    }
+
+    if (q8 === grading[0]) {
+      correctAnswers++;
+      console.log(correctAnswers)
+    }
+
+    if (q9 === grading[0]) {
+      correctAnswers++;
+      console.log(correctAnswers)
+    }
+
+    if (q10 === grading[0]) {
+      correctAnswers++;
+      console.log(correctAnswers)
+    }
+
+
+
+var resultString = "Great Job you got " + correctAnswers+ " right out of 10.";
+
+$(".container").text(resultString);
+
+
+
+
+
+
     }
 
  
