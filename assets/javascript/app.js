@@ -2,7 +2,11 @@ $(document).ready(function () {
   console.log("ready!");
 //===global vars
 var counter = 30;
-var rightAns = 0; 
+var correctAnswers = 0; 
+var incorrectAnswers = 0;
+var radio = "radio";
+var grading = ["true","false"];
+
 // display the counter to the doc
 $("#count").text(counter);
 
@@ -33,7 +37,7 @@ $("#count").text(counter);
   {
 console.log("test submitted");
     clearInterval(counter);
-    inputGrading();
+   validateForm(); 
   });
 
 
@@ -41,12 +45,28 @@ console.log("test submitted");
 
   //take in user inputs
   //check if inputs are correct
-  function inputGrading () {
-    if(radio == value("true")) {
-rightAns++;
-console.log(rightAns);
+  function validateForm() {
+    var q1 = document.forms["quizForm"]["qFl"].value;
+    var q2 = document.forms["quizForm"]["qCal"].value;
+    var q3 = document.forms["quizForm"]["qIl"].value;
+    var q4 = document.forms["quizForm"]["qTx"].value;
+    var q5 = document.forms["quizForm"]["qNy"].value;
+    var q6 = document.forms["quizForm"]["qCol"].value;
+    var q7 = document.forms["quizForm"]["qNv"].value;
+    var q8 = document.forms["quizForm"]["qMt"].value;
+    var q9 = document.forms["quizForm"]["qHw"].value;
+    var q10 = document.forms["quizForm"]["qAl"].value;
+    if (q1 === grading[0]) {
+      correctAnswers++;
+          console.log(correctAnswers)
     }
-}
+    if (q2 === grading[0]) {
+      correctAnswers++;
+      console.log(correctAnswers)
+    }
+    }
+
+ 
   //var userAnswer = $("#quetion1").val();
   //if(userAnswer){}
   //end test when submit is clicked

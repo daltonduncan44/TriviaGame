@@ -1,0 +1,34 @@
+function validateForm() {
+var q1 = document.forms("quizForm")(qFl).value;
+var q2 = document.forms("quizForm")(qCal).value;
+var q3 = document.forms("quizForm")(qIl).value;
+var q4 = document.forms("quizForm")(qTx).value;
+var q5 = document.forms("quizForm")(qNy).value;
+var q6 = document.forms("quizForm")(qCol).value;
+var q7 = document.forms("quizForm")(qNv).value;
+var q8 = document.forms("quizForm")(qMt).value;
+var q9 = document.forms("quizForm")(qHw).value;
+var q10 = document.forms("quizForm")(qAl).value;
+}
+});
+
+
+
+
+
+
+
+function inputGrading(){
+  if("true" === radio){
+    correctAnswers++;
+    console.log("#1 is correct");
+  }
+  else if("false" === radio){
+    incorrectAnswers++;
+    console.log("#1 is incorrect");
+  }
+  else if (undefined === radio){
+    unAnswered++;
+    console.log("#1 is unanswered");
+  }
+ }
